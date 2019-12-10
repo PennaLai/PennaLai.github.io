@@ -14,9 +14,12 @@
         <h1 class="name">pennalai</h1>
       </header>
       <article>
-        <p>大家好 我是penna,现在居住于深圳,今年是2019年,我生命中的第21年</p>
-          <p> 我把我的一些社交账号总结在了右边,如果有缘分,欢迎随时联系我.</p>
-        <p> 谢谢你在这里看到我,希望你每天都有好心情.</p>
+        <p>大家好,我是penna.</p>
+        <p>现在的时间是 </p>
+        <div id="datetime"></div>
+        <p>非常开心能在这个时间，在这里遇到你.</p>
+          <p>我把我的一些社交账号在了右边,如果需要,随时联系我.</p>
+        <p>谢谢你在这里看到我,希望你每天都有好心情.</p>
       </article>
 
     <footer>
@@ -30,3 +33,6 @@
   </div>
   </body>
 </html>
+<script>
+    setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+</script>
